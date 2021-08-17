@@ -10,6 +10,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of ["Squeeze-and-Excitation Networks---CVPR2018"](https://arxiv.org/abs/1709.01507)
 
+- Pytorch implementation of ["Selective Kernel Networks---CVPR2019"](https://arxiv.org/pdf/1903.06586.pdf)
+
 
 
 
@@ -72,6 +74,28 @@ import torch
 input=torch.randn(50,49,512)
 ssa = SimplifiedScaledDotProductAttention(d_model=512, h=8)
 output=ssa(input,input,input)
+print(output.shape)
+
+```
+
+
+***
+
+### 4. Squeeze-and-Excitation Attention Usage
+#### 4.1. Paper
+["Squeeze-and-Excitation Networks"](https://arxiv.org/abs/1709.01507)
+
+#### 4.2. Overview
+![](./img/SE.png)
+
+#### 4.3. Code
+```python
+from attention.SEAttention import SEAttention
+import torch
+
+input=torch.randn(50,512,7,7)
+se = SEAttention(channel=512,reduction=8)
+output=se(input)
 print(output.shape)
 
 ```
