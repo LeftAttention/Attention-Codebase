@@ -8,6 +8,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of ["Attention Is All You Need---NIPS2017"](https://arxiv.org/pdf/1706.03762.pdf)
 
+- Pytorch implementation of ["Squeeze-and-Excitation Networks---CVPR2018"](https://arxiv.org/abs/1709.01507)
+
 
 
 
@@ -51,6 +53,27 @@ input=torch.randn(50,49,512)
 sa = ScaledDotProductAttention(d_model=512, d_k=512, d_v=512, h=8)
 output=sa(input,input,input)
 print(output.shape)
+```
+
+***
+
+### 3. Simplified Self Attention Usage
+#### 3.1. Paper
+[None]()
+
+#### 3.2. Overview
+![](./img/SSA.png)
+
+#### 3.3. Code
+```python
+from attention.SimplifiedSelfAttention import SimplifiedScaledDotProductAttention
+import torch
+
+input=torch.randn(50,49,512)
+ssa = SimplifiedScaledDotProductAttention(d_model=512, h=8)
+output=ssa(input,input,input)
+print(output.shape)
+
 ```
 
 ***
