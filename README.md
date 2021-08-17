@@ -101,3 +101,23 @@ print(output.shape)
 ```
 
 ***
+
+### 5. SK Attention Usage
+#### 5.1. Paper
+["Selective Kernel Networks"](https://arxiv.org/pdf/1903.06586.pdf)
+
+#### 5.2. Overview
+![](./img/SK.png)
+
+#### 5.3. Code
+```python
+from attention.SKAttention import SKAttention
+import torch
+
+input=torch.randn(50,512,7,7)
+se = SKAttention(channel=512,reduction=8)
+output=se(input)
+print(output.shape)
+
+```
+***
