@@ -32,6 +32,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of ["A2-Nets: Double Attention Networks---NIPS2018"](https://arxiv.org/pdf/1810.11579.pdf)
 
+- Pytorch implementation of ["An Attention Free Transformer---ICLR2021 (Apple New Work)"](https://arxiv.org/pdf/2105.14103v1.pdf)
+
 ***
 
 ### 1. External Attention Usage
