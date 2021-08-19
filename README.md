@@ -42,6 +42,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of [Scaling Local Self-Attention for Parameter Efficient Visual Backbones---CVPR2021 Oral](https://arxiv.org/pdf/2103.12731.pdf)
 
+- Pytorch implementation of [Polarized Self-Attention: Towards High-quality Pixel-wise Regression---arXiv 2021.07.02](https://arxiv.org/abs/2107.00782)
+
 ***
 
 ### 1. External Attention Usage
