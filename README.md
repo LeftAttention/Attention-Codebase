@@ -244,3 +244,25 @@ print(danet(input).shape)
 ```
 
 ***
+
+### 10. Pyramid Split Attention Usage
+
+#### 10.1. Paper
+["EPSANet: An Efficient Pyramid Split Attention Block on Convolutional Neural Network"](https://arxiv.org/pdf/2105.14447.pdf)
+
+#### 10.2. Overview
+![](./img/psa.png)
+
+#### 10.3. Code
+```python
+from attention.PSA import PSA
+import torch
+
+input=torch.randn(50,512,7,7)
+psa = PSA(channel=512,reduction=8)
+output=psa(input)
+print(output.shape)
+
+```
+
+***
