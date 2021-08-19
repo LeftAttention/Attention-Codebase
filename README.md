@@ -50,6 +50,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of [S²-MLPv2: Improved Spatial-Shift MLP Architecture for Vision---arXiv 2021.08.02](https://arxiv.org/abs/2108.01072)
 
+- Pytorch implementation of [Global Filter Networks for Image Classification---arXiv 2021.07.01](https://arxiv.org/abs/2107.00645) 
+
 ***
 
 ### 1. External Attention Usage
