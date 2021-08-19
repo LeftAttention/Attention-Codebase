@@ -44,6 +44,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of [Polarized Self-Attention: Towards High-quality Pixel-wise Regression---arXiv 2021.07.02](https://arxiv.org/abs/2107.00782)
 
+- Pytorch implementation of [Contextual Transformer Networks for Visual Recognition---arXiv 2021.07.26](https://arxiv.org/abs/2107.12292)
+
 ***
 
 ### 1. External Attention Usage
