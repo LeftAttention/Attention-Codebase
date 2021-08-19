@@ -38,6 +38,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of [Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition---arXiv 2021.06.23](https://arxiv.org/abs/2106.12368)
 
+- Pytorch implementation of [CoAtNet: Marrying Convolution and Attention for All Data Sizes---arXiv 2021.06.09](https://arxiv.org/abs/2106.04803) 
+
 ***
 
 ### 1. External Attention Usage
