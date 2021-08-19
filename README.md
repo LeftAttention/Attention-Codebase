@@ -46,6 +46,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of [Contextual Transformer Networks for Visual Recognition---arXiv 2021.07.26](https://arxiv.org/abs/2107.12292)
 
+- Pytorch implementation of [Residual Attention: A Simple but Effective Method for Multi-Label Recognition---ICCV2021](https://arxiv.org/abs/2108.02456)
+
 ***
 
 ### 1. External Attention Usage
