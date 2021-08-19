@@ -30,6 +30,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of ["Spatial Group-wise Enhance: Improving Semantic Feature Learning in Convolutional Networks---arXiv 2019.05.23"](https://arxiv.org/pdf/1905.09646.pdf)
 
+- Pytorch implementation of ["A2-Nets: Double Attention Networks---NIPS2018"](https://arxiv.org/pdf/1810.11579.pdf)
+
 ***
 
 ### 1. External Attention Usage
