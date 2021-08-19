@@ -36,6 +36,8 @@ Implementation of various attention mechanisms
 
 - Pytorch implementation of [VOLO: Vision Outlooker for Visual Recognition---arXiv 2021.06.24"](https://arxiv.org/abs/2106.13112)
 
+- Pytorch implementation of [Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition---arXiv 2021.06.23](https://arxiv.org/abs/2106.12368)
+
 ***
 
 ### 1. External Attention Usage
