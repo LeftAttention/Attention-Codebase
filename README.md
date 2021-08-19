@@ -224,3 +224,23 @@ print(output.shape)
 ```
 
 ***
+
+### 9. DANet Attention Usage
+#### 9.1. Paper
+["Dual Attention Network for Scene Segmentation"](https://arxiv.org/pdf/1809.02983.pdf)
+
+#### 9.2. Overview
+![](./img/danet.png)
+
+#### 9.3. Code
+```python
+from attention.DANet import DAModule
+import torch
+
+input=torch.randn(50,512,7,7)
+danet=DAModule(d_model=512,kernel_size=3,H=7,W=7)
+print(danet(input).shape)
+
+```
+
+***
