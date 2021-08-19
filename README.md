@@ -13,6 +13,9 @@ Implementation of various attention mechanisms
 - Pytorch implementation of ["Selective Kernel Networks---CVPR2019"](https://arxiv.org/pdf/1903.06586.pdf)
 
 
+- Pytorch implementation of ["CBAM: Convolutional Block Attention Module---ECCV2018"](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf)
+
+
 
 
 ***
@@ -120,4 +123,28 @@ output=se(input)
 print(output.shape)
 
 ```
+***
+
+### 6. CBAM Attention Usage
+#### 6.1. Paper
+["CBAM: Convolutional Block Attention Module"](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf)
+
+#### 6.2. Overview
+![](./img/CBAM1.png)
+
+![](./img/CBAM2.png)
+
+#### 6.3. Code
+```python
+from attention.CBAM import CBAMBlock
+import torch
+
+input=torch.randn(50,512,7,7)
+kernel_size=input.shape[2]
+cbam = CBAMBlock(channel=512,reduction=16,kernel_size=kernel_size)
+output=cbam(input)
+print(output.shape)
+
+```
+
 ***
