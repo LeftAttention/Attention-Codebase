@@ -66,9 +66,9 @@ Implementation of various attention mechanisms
 from attention.ExternalAttention import ExternalAttention
 import torch
 
-input=torch.randn(50,49,512)
+input = torch.randn(50,49,512)
 ea = ExternalAttention(d_model=512,S=8)
-output=ea(input)
+output = ea(input)
 print(output.shape)
 ```
 
@@ -88,9 +88,9 @@ print(output.shape)
 from attention.SelfAttention import ScaledDotProductAttention
 import torch
 
-input=torch.randn(50,49,512)
+input = torch.randn(50,49,512)
 sa = ScaledDotProductAttention(d_model=512, d_k=512, d_v=512, h=8)
-output=sa(input,input,input)
+output = sa(input,input,input)
 print(output.shape)
 ```
 
@@ -108,9 +108,9 @@ print(output.shape)
 from attention.SimplifiedSelfAttention import SimplifiedScaledDotProductAttention
 import torch
 
-input=torch.randn(50,49,512)
+input = torch.randn(50,49,512)
 ssa = SimplifiedScaledDotProductAttention(d_model=512, h=8)
-output=ssa(input,input,input)
+output = ssa(input,input,input)
 print(output.shape)
 
 ```
@@ -130,9 +130,9 @@ print(output.shape)
 from attention.SEAttention import SEAttention
 import torch
 
-input=torch.randn(50,512,7,7)
+input = torch.randn(50,512,7,7)
 se = SEAttention(channel=512,reduction=8)
-output=se(input)
+output = se(input)
 print(output.shape)
 
 ```
@@ -151,9 +151,9 @@ print(output.shape)
 from attention.SKAttention import SKAttention
 import torch
 
-input=torch.randn(50,512,7,7)
+input = torch.randn(50,512,7,7)
 se = SKAttention(channel=512,reduction=8)
-output=se(input)
+output = se(input)
 print(output.shape)
 
 ```
@@ -173,10 +173,10 @@ print(output.shape)
 from attention.CBAM import CBAMBlock
 import torch
 
-input=torch.randn(50,512,7,7)
-kernel_size=input.shape[2]
+input = torch.randn(50,512,7,7)
+kernel_size = input.shape[2]
 cbam = CBAMBlock(channel=512,reduction=16,kernel_size=kernel_size)
-output=cbam(input)
+output = cbam(input)
 print(output.shape)
 
 ```
@@ -195,9 +195,9 @@ print(output.shape)
 from attention.BAM import BAMBlock
 import torch
 
-input=torch.randn(50,512,7,7)
+input = torch.randn(50,512,7,7)
 bam = BAMBlock(channel=512,reduction=16,dia_val=2)
-output=bam(input)
+output = bam(input)
 print(output.shape)
 
 ```
@@ -216,9 +216,9 @@ print(output.shape)
 from attention.ECAAttention import ECAAttention
 import torch
 
-input=torch.randn(50,512,7,7)
+input = torch.randn(50,512,7,7)
 eca = ECAAttention(kernel_size=3)
-output=eca(input)
+output = eca(input)
 print(output.shape)
 
 ```
