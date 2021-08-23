@@ -265,4 +265,31 @@ print(output.shape)
 
 ```
 
+
+***
+
+
+### 11. Efficient Multi-Head Self-Attention Usage
+
+#### 11.1. Paper
+["ResT: An Efficient Transformer for Visual Recognition"](https://arxiv.org/abs/2105.13677)
+
+#### 11.2. Overview
+![](./img/EMSA.png)
+
+#### 11.3. Code
+```python
+
+from attention.EMSA import EMSA
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+input=torch.randn(50,64,512)
+emsa = EMSA(d_model=512, d_k=512, d_v=512, h=8,H=8,W=8,ratio=2,apply_transform=True)
+output=emsa(input,input,input)
+print(output.shape)
+    
+```
+
 ***
