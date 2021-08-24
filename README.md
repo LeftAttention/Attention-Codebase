@@ -452,3 +452,35 @@ print(output.shape)
 
 
 ***
+
+
+
+### 18. ViP Attention Usage
+
+#### 18.1. Paper
+
+
+[Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition"](https://arxiv.org/abs/2106.12368)
+
+
+#### 18.2. Overview
+![](./img/ViP.png)
+
+#### 18.3. Code
+```python
+
+from attention.ViP import WeightedPermuteMLP
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+input=torch.randn(64,8,8,512)
+seg_dim=8
+vip=WeightedPermuteMLP(512,seg_dim)
+out=vip(input)
+print(out.shape)
+
+```
+
+
+***
