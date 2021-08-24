@@ -683,7 +683,7 @@ print(output.shape)
 
 ![](./img/GFNet.jpg)
 
-#### 25.3. Code - Implemented by 原作者（赵文亮）
+#### 25.3. Code 
 ```python
 from attention.gfnet import GFNet
 import torch
