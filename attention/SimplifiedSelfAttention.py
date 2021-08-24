@@ -81,3 +81,5 @@ if __name__ == '__main__':
     ssa = SimplifiedScaledDotProductAttention(d_model=512, h=8)
     output=ssa(input,input,input)
     print(output.shape)
+
+    

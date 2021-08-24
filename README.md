@@ -670,3 +670,31 @@ print(output.shape)
 ```
 
 ***
+
+
+### 25. GFNet Attention Usage
+
+#### 25.1. Paper
+
+[Global Filter Networks for Image Classification---arXiv 2021.07.01](https://arxiv.org/abs/2107.00645) 
+
+
+#### 25.2. Overview
+
+![](./img/GFNet.jpg)
+
+#### 25.3. Code - Implemented by 原作者（赵文亮）
+```python
+from attention.gfnet import GFNet
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+x = torch.randn(1, 3, 224, 224)
+gfnet = GFNet(embed_dim=384, img_size=224, patch_size=16, num_classes=1000)
+out = gfnet(x)
+print(out.shape)
+
+```
+
+***
