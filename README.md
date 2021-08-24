@@ -484,3 +484,34 @@ print(out.shape)
 
 
 ***
+
+
+### 19. CoAtNet Attention Usage
+
+#### 19.1. Paper
+
+
+[CoAtNet: Marrying Convolution and Attention for All Data Sizes"](https://arxiv.org/abs/2106.04803) 
+
+
+#### 19.2. Overview
+![](./img/CoAtNet.jpg)
+
+
+#### 19.3. Code
+```python
+
+from attention.CoAtNet import CoAtNet
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+input=torch.randn(1,3,224,224)
+mbconv=CoAtNet(in_ch=3,image_size=224)
+out=mbconv(input)
+print(out.shape)
+
+```
+
+
+***
