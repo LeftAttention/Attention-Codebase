@@ -423,3 +423,32 @@ print(output.shape)
 ```
 
 ***
+
+
+### 17. Outlook Attention Usage
+
+#### 17.1. Paper
+
+
+[VOLO: Vision Outlooker for Visual Recognition"](https://arxiv.org/abs/2106.13112)
+
+
+#### 17.2. Overview
+![](./img/OutlookAttention.png)
+
+#### 17.3. Code
+```python
+from attention.OutlookAttention import OutlookAttention
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+input=torch.randn(50,28,28,512)
+outlook = OutlookAttention(dim=512)
+output=outlook(input)
+print(output.shape)
+
+```
+
+
+***
