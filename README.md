@@ -373,3 +373,29 @@ print(output.shape)
 ```
 
 ***
+
+
+### 15. A2 Attention Usage
+
+#### 15.1. Paper
+[A2-Nets: Double Attention Networks](https://arxiv.org/pdf/1810.11579.pdf)
+
+#### 15.2. Overview
+![](./img/A2.png)
+
+#### 15.3. Code
+```python
+from attention.A2Atttention import DoubleAttention
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+input=torch.randn(50,512,7,7)
+a2 = DoubleAttention(512,128,128,True)
+output=a2(input)
+print(output.shape)
+
+```
+
+
+***
