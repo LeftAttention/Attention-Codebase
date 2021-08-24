@@ -348,3 +348,28 @@ print(output.shape)
 ```
 
 ***
+
+
+### 14. SGE Attention Usage
+
+#### 14.1. Paper
+[Spatial Group-wise Enhance: Improving Semantic Feature Learning in Convolutional Networks](https://arxiv.org/pdf/1905.09646.pdf)
+
+#### 14.2. Overview
+![](./img/SGE.png)
+
+#### 14.3. Code
+```python
+from attention.SGE import SpatialGroupEnhance
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+input=torch.randn(50,512,7,7)
+sge = SpatialGroupEnhance(groups=8)
+output=sge(input)
+print(output.shape)
+
+```
+
+***
