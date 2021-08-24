@@ -548,3 +548,34 @@ print(output.shape)
 
 
 ***
+
+
+### 21. Polarized Self-Attention Usage
+
+#### 21.1. Paper
+
+[Polarized Self-Attention: Towards High-quality Pixel-wise Regression"](https://arxiv.org/abs/2107.00782)  
+
+
+#### 21.2. Overview
+
+![](./img/PoSA.png)
+
+#### 21.3. Code
+```python
+
+from attention.PolarizedSelfAttention import ParallelPolarizedSelfAttention,SequentialPolarizedSelfAttention
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+input=torch.randn(1,512,7,7)
+psa = SequentialPolarizedSelfAttention(channel=512)
+output=psa(input)
+print(output.shape)
+
+
+```
+
+
+***
