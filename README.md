@@ -591,16 +591,6 @@ print(output.shape)
 
 #### 22.2. Overview
 
-![](./img/
-### 22. CoTAttention Usage
-
-#### 22.1. Paper
-
-[Contextual Transformer Networks for Visual Recognition---arXiv 2021.07.26](https://arxiv.org/abs/2107.12292) 
-
-
-#### 22.2. Overview
-
 ![](./img/CoT.png)
 
 #### 22.3. Code
@@ -617,22 +607,35 @@ output=cot(input)
 print(output.shape)
 
 
-
 ```
 
-***.png)
 
-#### 22.3. Code
+***
+
+
+
+### 23. Residual Attention Usage
+
+#### 23.1. Paper
+
+[Residual Attention: A Simple but Effective Method for Multi-Label Recognition---ICCV2021](https://arxiv.org/abs/2108.02456) 
+
+
+#### 23.2. Overview
+
+![](./img/ResAtt.png)
+
+#### 23.3. Code
 ```python
 
-from attention.CoTAttention import CoTAttention
+from attention.ResidualAttention import ResidualAttention
 import torch
 from torch import nn
 from torch.nn import functional as F
 
 input=torch.randn(50,512,7,7)
-cot = CoTAttention(dim=512,kernel_size=3)
-output=cot(input)
+resatt = ResidualAttention(channel=512,num_class=1000,la=0.2)
+output=resatt(input)
 print(output.shape)
 
 
