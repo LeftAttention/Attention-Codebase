@@ -638,7 +638,34 @@ resatt = ResidualAttention(channel=512,num_class=1000,la=0.2)
 output=resatt(input)
 print(output.shape)
 
+```
 
+***
+
+
+
+### 24. S2 Attention Usage
+
+#### 24.1. Paper
+
+[S²-MLPv2: Improved Spatial-Shift MLP Architecture for Vision---arXiv 2021.08.02](https://arxiv.org/abs/2108.01072) 
+
+
+#### 24.2. Overview
+
+![](./img/S2Attention.png)
+
+#### 24.3. Code
+```python
+from attention.S2Attention import S2Attention
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+input=torch.randn(50,512,7,7)
+s2att = S2Attention(channels=512)
+output=s2att(input)
+print(output.shape)
 
 ```
 
